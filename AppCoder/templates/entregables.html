@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entregables</title>
-</head>
-<body style = "background-color: orange;">
-    <h1> Vista de entregables</h1>
-</body>
-</html>
+{% extends 'padre.html' %}
+
+{% load static %}
+
+{% block ContenidoQueCambia%}
+    <h1> Listado de entregables </h1>
+    <h4> Aquí se verán los entregables de los alumnos </h4>
+{% endblock ContenidoQueCambia%}

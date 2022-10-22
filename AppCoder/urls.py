@@ -4,10 +4,10 @@ from .views import *
 urlpatterns = [
     path ('agrega_curso/<nombre>/<camada>', curso),
     path ('lista_cursos/', lista_curso),
-    path ('inicio/', inicio),
-    path ('cursos/', cursos),
-    path ('estudiantes/', estudiantes),
-    path ('profesores/', profesores),
-    path ('entregables/', entregables),
+    path ('', inicio),
+    path ('cursos/', cursos, name ='cursos'),
+    path ('estudiantes/', estudiantes, name = 'estudiantes'),
+    path ('profesores/', profesores, name = 'profesores'),
+    path ('entregables/', entregables, name= 'entregables'),
 
 ]
